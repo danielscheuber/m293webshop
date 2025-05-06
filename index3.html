@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webshop</title>
+  <link rel="stylesheet" href="style3.css" />
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Webshop</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Willkommen im Webshop</h2>
+      <p>Entdecke unsere neuesten Laptops!</p>
+    </section>
+
+    <section class="produkte-grid">
+      <article class="produkt">
+        <img src="https://p3-ofp.static.pub//fes/cms/2024/07/05/umcrxcnsm2br1itju6gvundeb9s6tf364734.png" alt="Laptop 1">
+        <h4>Lenovo ThinkPad X1 Carbon</h4>
+        <p>Ultraleichtes Business-Notebook mit Intel i7 und 16GB RAM.</p>
+        <p class="preis">CHF 1'499.00</p>
+      </article>
+
+      <article class="produkt">
+        <img src="https://www.apple.com/newsroom/images/product/mac/standard/Apple-WWDC22-MacBook-Air-hero-220606_big.jpg.large.jpg" alt="Laptop 2">
+        <h4>Apple MacBook Air M2</h4>
+        <p>Leistungsstarker Apple-Laptop mit M2-Chip und 13" Retina Display.</p>
+        <p class="preis">CHF 1'299.00</p>
+      </article>
+
+      
+    </section>
+
+    
+    <section class="produkt-erstellen">
+      <h3>Eigenes Produkt hinzufügen</h3>
+      <form id="produktForm" onsubmit="produktHinzufuegen(); return false;">
+        <label for="bild">Bild-URL:</label>
+        <input type="url" id="bild" required>
+
+        <label for="name">Produktname:</label>
+        <input type="text" id="name" required>
+
+        <label for="beschreibung">Beschreibung:</label>
+        <input type="text" id="beschreibung" required>
+
+        <label for="preis">Preis (CHF):</label>
+        <input type="text" id="preis" required>
+
+        <button type="submit">Produkt hinzufügen</button>
+      </form>
+    </section>
+    <section class="newsletter-link">
+      <h3>Newsletter</h3>
+      <a href="newsletter.html">Newsletter abonnieren</a>
+    </section>
+    
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Mein Webshop | <a href="impressum.html">Impressum</a></p>
+  </footer>
+  
+</body>
+</html>
